@@ -63,10 +63,34 @@
   </div>
 </section>
 
-<section id="contact">
-  <h1>Contact Us</h1>
-  <p>Hello world! This is HTML5 Boilerplate contact us section.</p>
+<section id="contact" class="contact-section">
+  <div class="contact-content" id="div-form">
+    <h1>Contact Us</h1>
+    <form id="form-container">
+      <div id="name-container" class="input-container">
+        <label for="name"> </label>
+        <input class="input" type="text" name="name" id="name" placeholder="Full Name" required>
+      </div>
+      <div id="email-container" class="input-container">
+        <label for="email"> </label>
+        <input class="input" type="email" name="email" id="email" placeholder="E-mail" required>
+      </div>
+      <div id="message-container" class="input-container">
+        <label for="message"></label>
+        <textarea name="message" id="message" placeholder="Type your Message" required></textarea>
+      </div>
+      <div id="send-btn-container">
+        <button class="btn green-text" id="send-btn">Send</button>
+      </div>
+    </form>
+  </div>
 </section>
+
+<footer>
+  <div class="footer-content" id="footer-info">
+    <p>Info@Serenium.app</p>
+  </div>
+</footer>
 
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
