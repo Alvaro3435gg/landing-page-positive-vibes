@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'Robust';
+  src: url('assets_css/Robust medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Robust';
+  src: url('assets_css/Robust bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Robust';
+  src: url('assets_css/Robust regular.ttf') format('truetype');
+}
+
+body, header {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+header {
+  background-image: url('assets_css/NavBar.png');
+  background-size: cover;
+  background-position: center;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  padding: 10vw 15px;
+  text-decoration: none;
+  margin-right: 4vw;
+  color: white;
+  font-family: Robust;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+/* Body styles */
+body {
+  background-color: #0E0E0E;
+  color: #ffffff;
+}
+
+/* Section home */
+#home {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.BGSplash-container {
+  width: 50vw;
+  height: 50vh;
+}
+
+.googlePlay-container, .apple-container {
+  display: inline-block;
+  width: 10vw;
+}
+
+#apple {
+  width: 100%;
+  margin-left: 7vw;
+  margin-top: 15vh;
+}
+
+#googlePlay {
+  width: 100%;
+  margin-left: 3vw;
+  margin-top: 15vh;
+}
+
+#BGSplash {
+  width: 100%;
+  margin-left: 40vw;
+  margin-top: 10vh;
+}
+
+.content-left-home {
+  margin-left: 2vw;
+  margin-top: -30vh;
+  text-align: left;
+  color: white;
+  width: 30%;
+}
+
+.content-left-home p:first-child {
+  font-family: Robust;
+  font-size: 3em;
+}
+
+.content-left-home p:last-child {
+  font-family: Robust;
+  font-size: 2em;
+  font-style: italic;
+}
+
+.content-left-home p em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Section About */
+#about {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#about {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url('assets_css/Icon White.png');
+  background-size: 40% auto;
+  background-position: right 5vw center;
+  background-repeat: no-repeat;
+}
+
+.content-right-about {
+  margin-right: 6vw;
+  margin-top: -30vh;
+  text-align: left;
+  color: white;
+  width: 35%;
+}
+
+.content-right-about h1 {
+  font-family: Robust;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.content-right-about p {
+  font-family: Robust;
+  font-size: 2em;
+  font-weight: normal;
+}
