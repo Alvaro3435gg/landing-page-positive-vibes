@@ -40,7 +40,7 @@ header {
   text-decoration: none;
   margin-right: 4vw;
   color: white;
-  font-family: Robust;
+  font-family: Robust, sans-serif;
   font-weight: bold;
   font-size: 3em;
 }
@@ -91,17 +91,20 @@ body {
   margin-top: -30vh;
   text-align: left;
   color: white;
-  width: 30%;
+  width: 40%;
 }
+.sub-content-left-home{
+  width: 75%;
 
+}
 .content-left-home p:first-child {
-  font-family: Robust;
-  font-size: 3em;
+  font-family: Robust, sans-serif;
+  font-size: 4.5em;
 }
 
 .content-left-home p:last-child {
-  font-family: Robust;
-  font-size: 2em;
+  font-family: Robust, sans-serif;
+  font-size: 2.5em;
   font-style: italic;
 }
 
@@ -137,13 +140,13 @@ body {
 }
 
 .content-right-about h1 {
-  font-family: Robust;
+  font-family: Robust, sans-serif;
   font-size: 5em;
   font-weight: bold;
 }
 
 .content-right-about p {
-  font-family: Robust;
+  font-family: Robust, sans-serif;
   font-size: 2em;
   font-weight: normal;
 }
