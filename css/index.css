@@ -13,7 +13,7 @@
   src: url('assets_css/Robust regular.ttf') format('truetype');
 }
 
-body, header {
+body, header, footer {
   margin: 0;
   padding: 0;
 }
@@ -71,13 +71,13 @@ body {
 #apple {
   width: 100%;
   margin-left: 7vw;
-  margin-top: 15vh;
+  margin-top: -6vh;
 }
 
 #googlePlay {
   width: 100%;
   margin-left: 3vw;
-  margin-top: 15vh;
+  margin-top: -6vh;
 }
 
 #BGSplash {
@@ -116,7 +116,6 @@ body {
 /* Section About */
 #about {
   height: 100vh;
-  overflow: hidden;
   position: relative;
 }
 
@@ -133,7 +132,7 @@ body {
 
 .content-right-about {
   margin-right: 6vw;
-  margin-top: -30vh;
+  margin-top: -20vh;
   text-align: left;
   color: white;
   width: 35%;
@@ -149,4 +148,123 @@ body {
   font-family: Robust, sans-serif;
   font-size: 2em;
   font-weight: normal;
+}
+
+/* Section Contact us */
+
+#contact {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-content {
+  text-align: center;
+  margin-bottom: 10vw;
+}
+
+.contact-content h1 {
+  font-family: Robust, sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.contact-content p {
+  font-family: Robust, sans-serif;
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+
+#form-container {
+  align-items: center;
+  width: 100%;
+}
+
+.input-container {
+  margin-bottom: 2.5vw;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow:0px 0px 122px 0px rgba(123,0,254,0.98);
+  -moz-box-shadow: 0px 0px 122px 0px rgba(123,0,254,0.98);
+  box-shadow: 0px 0px 122px 0px rgba(123,0,254,0.98);
+  background-color: transparent;
+
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 16px;
+  font-family: Robust;
+  font-weight: normal;
+  color: black;
+  font-size: 1.5em;
+  border: 3px solid #7026BC;
+}
+
+textarea {
+  font-family: Robust;
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 16px;
+  font-weight: normal;
+  color: black;
+  font-size: 1.5em;
+  padding: 5px;
+  border: 3px solid #7026BC;
+}
+
+#message-container{
+  height: 8vh;
+}
+
+#send-btn-container {
+  text-align: center;
+  border-radius: 16px;
+  font-family: Robust;
+  font-weight: bold;
+  color: black;
+  font-size: 2em;
+}
+
+.btn {
+  margin-top: 4vh;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 40%;
+  background-color: #4900fe;
+  color: white;
+  -webkit-box-shadow:0px 0px 122px 0px rgba(123,0,254,0.98);
+  -moz-box-shadow: 0px 0px 122px 0px rgba(123,0,254,0.98);
+  box-shadow: 0px 0px 122px 0px rgba(123,0,254,0.98);
+  border: 3px solid #7026BC;
+}
+
+/* Section footer */
+footer {
+  background-color: #FFFFFF;
+  height: 10vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#footer-info p {
+  text-align: left;
+  color: gray;
+  font-family: Robust;
+  font-weight: bold;
+  font-size: 2em;
+  margin-left: 5vw;
 }
