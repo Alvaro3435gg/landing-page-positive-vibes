@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'Robust';
   src: url('assets_css/Robust medium.ttf') format('truetype');
@@ -20,13 +24,8 @@ body, header, footer {
 
 /* Navbar Styles */
 header {
-  background-image: url('assets_css/NavBar.png');
-  background-size: cover;
-  background-position: center;
   height: 10vh;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 nav{
@@ -38,15 +37,11 @@ nav{
   background-position: center;
   height: 10vh;
   display: flex;
-
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-.nav-icon-container{
-  width: 40%;
-  height: 10vh;
 
-
-
-}
 .nav-icon{
   height: 10vh;
   width: 10vh;
@@ -54,17 +49,20 @@ nav{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 2vw;
+  margin-left: 1vw;
+  padding: 0;
+  order: 1;
 }
 .nav-links {
   list-style: none;
   margin: 0;
   padding: 0;
   height: inherit;
-  width: 60vw;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  order: 2;
 }
 
 
@@ -78,6 +76,67 @@ nav{
   font-size: 3em;
 }
 
+.menu-icon img {
+  width: 10vh;
+  height: 10vh;
+}
+.menu-icon{
+}
+.checkbtn{
+  cursor: pointer;
+  order: 3;
+  margin-right: 2vw;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+.mobile-menu-logo{
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .nav-links {
+    position: fixed;
+    flex-direction: column; /* Cambia la dirección de los enlaces a vertical */
+    background-image: url('assets_css/PhoneBG.png'); /* Fondo semi-transparente */
+    width: 100%; /* Ocupa toda la pantalla */
+    height: 100vh;
+    top:0;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    display:none
+  }
+
+  .checkbtn{
+    display: flex;
+  }
+  .nav-links li a {
+    line-height: 18vh;
+  }
+
+  .mobile-menu-logo{
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+  }
+  .nav-icon{
+    height: 10vh;
+    width: 10vh;
+    background-image: url("../img/iconNavBar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0;
+    padding: 0;
+    order: 1;
+  }
+  }
+
+
+
 /* Body styles */
 body {
   background-color: #0E0E0E;
@@ -89,6 +148,11 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
+}
+
+.container_section1{
+  display: flex;
+  align-items: center;
 }
 
 .BGSplash-container {
@@ -115,18 +179,11 @@ body {
 
 #BGSplash {
   width: 100%;
-  margin-left: 40vw;
-  margin-top: 10vh;
 }
-#BGSplash2 {
-  width: 100%;
-  margin-right: 40vw;
 
-}
 
 .content-left-home {
   margin-left: 2vw;
-  margin-top: -30vh;
   text-align: left;
   color: white;
   width: 40%;
@@ -168,9 +225,16 @@ body {
   background-repeat: no-repeat;
 }
 
+#BGSplash2 {
+  width: 100%;
+}
+
+.container_section2{
+  display: flex;
+  align-items: center;
+}
 .content-right-about {
-  margin-right: 6vw;
-  margin-top: -20vh;
+  margin-left: 8vw;
   text-align: left;
   color: white;
   width: 35%;
