@@ -45,13 +45,10 @@ nav{
 .nav-icon{
   height: 10vh;
   width: 10vh;
-  background-image: url("../img/iconNavBar.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   margin-left: 1vw;
   padding: 0;
   order: 1;
+  cursor: pointer;
 }
 .nav-links {
   list-style: none;
@@ -99,41 +96,38 @@ nav{
 @media (max-width: 920px) {
   .nav-links {
     position: fixed;
-    flex-direction: column; /* Cambia la dirección de los enlaces a vertical */
-    background-image: url('assets_css/PhoneBG.png'); /* Fondo semi-transparente */
-    width: 100%; /* Ocupa toda la pantalla */
+    flex-direction: column;
+    background-image: url('assets_css/PhoneBG.png');
+    width: 100%;
     height: 100vh;
-    top:0;
+    top: 0;
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
-    display:none
+    display: none
   }
 
-  .checkbtn{
+  .checkbtn {
     display: flex;
   }
+
   .nav-links li a {
     line-height: 18vh;
   }
 
-  .mobile-menu-logo{
+  .mobile-menu-logo {
     width: 20vh;
     height: 20vh;
     display: flex;
   }
-  .nav-icon{
-    height: 10vh;
-    width: 10vh;
-    background-image: url("../img/iconNavBar.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 0;
-    padding: 0;
-    order: 1;
+
+  .nav-icon {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
-  }
+}
 
 
 
